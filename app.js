@@ -91,7 +91,7 @@ function sumArray(testArray){ //eslint-disable-line
 
 }
 
-// TODO: Here is the test for sumArray(); uncomment it to run it
+// DONE: Here is the test for sumArray(); uncomment it to run it
 testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
