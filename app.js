@@ -33,9 +33,9 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // DONE: Write your code here
-function multiply(c,d){ //eslint-disable-line
-  var theProduct = c * d;
-  var message = 'The product of ' + c + ' and ' + d + ' is ' + theProduct + '.'
+function multiply(a,b){ //eslint-disable-line
+  var theProduct = a * b;
+  var message = 'The product of ' + a + ' and ' + b + ' is ' + theProduct + '.'
   return [theProduct, message];
 }
 
@@ -108,10 +108,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+  var newProductArray = multiply(multiply((testArray)[0],(testArray)[1])[0],(testArray)[2])[0];
+  console.log(newProductArray);
+  var messageProductArray = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + newProductArray + '.'
+  return[newProductArray, messageProductArray];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(2,3,4);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
